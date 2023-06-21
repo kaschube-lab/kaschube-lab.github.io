@@ -42,6 +42,9 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 <body>
 
@@ -158,7 +161,40 @@
 <!-- End paper abstract -->
 
 
+<!-- Method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method - CMEP</h2>
+        <div class="content has-text-justified">
+          <p>
+            We developed a two-staged machine learning-based predictive modelling framework, which we refer to as covariance maximizing eigenvector-based predictive modelling (CMEP). 
+            The basic idea of CMEP is to first create candidate features (based on eigenvectors) within
+            a training set that share a strong linear relationship (covariance) with the target variable of interest, and
+            then, in a second step, to assess the predictive power of these features by training and testing a
+            prediction model (ElasticNet regression) based on these features. 
+          </p>
+        </div>
 
+        <h4 class="title is-3">Feature construction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our new feature construction method explicitly amplifies features whose expression covary with a target variable
+            (here intelligence). We project functional connectivity matrices into a scalar space such that the 
+            covariation between intelligence scores and this scalar projection is maximal. 
+          </p>
+          <p>
+            \(a \ne 0\)
+          </p>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method -->
 
 
 
@@ -210,12 +246,6 @@
 
 
 
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
